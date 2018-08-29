@@ -7,7 +7,7 @@ var UglifyJsPlugin = require('uglifyjs-webpack-plugin')
 process.noDeprecation = true
 
 module.exports = {
-    entry: "./src/index.js",
+    entry: ['babel-polyfill', "./src/index.js"],
     output: {
         path:path.join(__dirname, 'dist', 'assets'),
         filename: "bundle.js",
